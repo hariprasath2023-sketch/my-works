@@ -1,0 +1,10 @@
+Process
+Exception occured file_exists_case_sensitive_generic ('C:\\Hariprasath-Python', 'C:\\Hariprasath-Python') ::: [WinError 267] The directory name is invalid: 'demo.txt'
+Traceback (most recent call last):
+  File "C:\Hariprasath-Python\helperfunctions1.py", line 14, in file_exists_case_sensitive_generic
+    if os.path.basename(filepath +'/'+filename) in os.listdir(filename):
+NotADirectoryError: [WinError 267] The directory name is invalid: 'demo.txt'
+**	-	ERROR : input file <demo2.txt> - not found .... exiting
+ - input file found - processing
+copying file from {source} to {destination}
+** - ERROR : input file <cibc2024-05> - not found .... exiting

@@ -1,0 +1,21 @@
+====================================================================================================================
+
+Derive Environment START
+
+Current Working Directory is C:\Hariprasath-Python
+
+Environment is DEV
+
+Derive Environment END
+
+Importing moconfig file from batch directory - START
+
+Batch directory path inserted
+
+Importing moconfig file from batch directory - END
+
+ER0108_1
+Started Hari_297_ER0108 reports at 2024-07-02 18:00:40.689253
+File Hari _297_client_profile_managed_account.txt exists
+Current business date is 20240702
+Getting the header date in the file
