@@ -1,0 +1,26 @@
+
+body{background-image:url(https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?auto=compress&cs=tinysrgb&w=600);}
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: solid;
+  font-size: 17px;
+}
+navbar.a:hover {
+  background-color: #000;
+}
+.active {
+  background-color: #04aa6d;
+}
+@media screen and (max-width: 500) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}

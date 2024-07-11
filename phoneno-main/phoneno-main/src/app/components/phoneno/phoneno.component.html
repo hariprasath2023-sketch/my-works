@@ -1,0 +1,53 @@
+<p class="fs-1 text-center my-2">Todo Application</p>
+<form class="container w-50 my-5" #form="ngForm">
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputPassword1"
+      name="name"
+      [(ngModel)]="nameRef"
+     
+    />
+
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputPassword1"
+      name="phonenumber"
+      [(ngModel)]="numberRef"
+    />
+  <button type="button" class="btn btn-outline-info my-4" (click)="add(form)">
+    {{ Add }}
+  </button>
+  </div>
+</form>
+<p class="fs-2 text-center my-2">Details</p>
+<table class="table table-hover container w-50">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Phone Number</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let todo of todos">
+    <tr>
+      <td>{{ todo.id }}</td>
+      <td>{{ todo.name }}</td>
+      <td>{{ todo.phonenumber }}</td>
+      <td>
+        <button class="btn btn-primary ms-2" (click)="edit(todo.id)">
+          edit</button
+        ><button class="btn btn-danger ms-2" (click)="delete(todo.id)">
+          delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
